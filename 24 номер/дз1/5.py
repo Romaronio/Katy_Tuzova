@@ -1,0 +1,5 @@
+s = open('24.5.дз.txt').readline()
+s = s.replace('A', '*')
+s = s.replace('E', '*')
+s = s.split('*')
+print(len(max(s, key=len)))
