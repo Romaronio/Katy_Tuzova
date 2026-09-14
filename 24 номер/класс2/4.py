@@ -1,4 +1,4 @@
-s = open('24.4.класс2.txt').readline()
+s = open('14.09.26/24.4.класс2.txt').readline()
 # s = s.split('AXMM')
 # print(len(max(s, key=len)) + 6)
 l = 0

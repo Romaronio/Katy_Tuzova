@@ -1,4 +1,4 @@
-s = open('24.2.класс2.txt').readline()
+s = open('14.09.26/24.2.класс2.txt').readline()
 for i in 'AEIOUY':
     s = s.replace(i, 'A')
 l = 1

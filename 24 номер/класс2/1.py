@@ -1,4 +1,4 @@
-s = open('24.1.класс2.txt').readline()
+s = open('14.09.26/24.1.класс2.txt').readline()
 l = 0
 k = 0
 m = 0
