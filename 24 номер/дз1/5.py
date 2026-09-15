@@ -3,3 +3,4 @@ s = s.replace('A', '*')
 s = s.replace('E', '*')
 s = s.split('*')
 print(len(max(s, key=len)))
+#молодец +

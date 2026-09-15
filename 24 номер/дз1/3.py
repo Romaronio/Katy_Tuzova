@@ -9,3 +9,4 @@ for i in s:
     if n > maxi:
         maxi = n
 print(maxi)
+#молодец, правильно
