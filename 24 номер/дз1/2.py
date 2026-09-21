@@ -1,15 +1,11 @@
 s = open('24.2.дз.txt').readline()
-s = s.replace('00','*')
-s = s.replace('11','*')
-s = s.replace('22','*')
-s = s.replace('33','*')
-s = s.replace('44','*')
-s = s.replace('55','*')
-s = s.replace('66','*')
-s = s.replace('77','*')
-s = s.replace('88','*')
-s = s.replace('99','*')
-s = s.split('*')
+for i in s:
+    if i in '02468':
+        s = s.replace(i, '*')
+    elif i in '13579':
+        s = s.replace(i, '#')
+s = s.replace('*#', '@')
+s = s.split('@')
 print(len(max(s, key=len)))
 #смотри в чем ошибка, у тебя не должно быть рядом стоящих четных и нечетных числе,
 # а у тебя получилось что нет рядом стоящих одинаковых чисел

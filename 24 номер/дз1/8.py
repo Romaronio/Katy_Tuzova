@@ -1,18 +1,16 @@
 s = open('24.8.дз.txt').readline()
-s = s.replace('PR', '*')
-s = s.replace('ST', '#')
 pr = 0
 st = 0
 n = 0
 maxi = 0
-for i in s:
+for i in range(len(s) - 1):
     if pr == 0 or st == 0:
-        if i == '*':
+        if s[i] + s[i + 1]  == 'PR':
             pr += 1
-            n += 2
-        elif i == '#':
+            n += 1
+        elif s[i] + s[i + 1] == 'ST':
             st += 1
-            n += 2
+            n += 1
         else:
             n += 1
     else:
