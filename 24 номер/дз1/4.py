@@ -8,9 +8,9 @@ for i in range(len(s)):
         ch += 1
     elif ch > 0 and s[i] in '0123456789AB':
         n += 1
+        if n > maxi and s[i] in '02468A':
+            maxi = n
     else:
         n = 0
         ch = 0
-    if n > maxi and s[i] in '02468A':
-        maxi = n
 print(maxi)

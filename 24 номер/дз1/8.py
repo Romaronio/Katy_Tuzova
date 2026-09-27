@@ -13,11 +13,11 @@ for i in range(len(s) - 1):
             n += 1
         else:
             n += 1
+        if n > maxi:
+            maxi = n
     else:
         n = 0
         pr = 0
         st = 0
-    if n > maxi:
-        maxi = n
 print(maxi)#не учла тот факт, что строка может начниать на r, вметсто pr и на t вместо st
 #аналогично с концом, строка может заканчиваться на p и на s
