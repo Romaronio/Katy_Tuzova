@@ -7,6 +7,13 @@ s = s.replace('#*', '!')
 n = 0
 maxi = 0
 for i in s:
+    if i == '@':
+        if n == 0:
+            n += 1
+        else:
+            if n + 1 > maxi:
+                maxi = n + 1
+            n = 0
     if i == '!':
         n += 1
     else:

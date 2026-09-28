@@ -8,12 +8,12 @@ for r in range(len(s) - 3):
         n += 1
     if s[r] == 'Y':
         y += 1
-    while n > 60 or y > 120 or s[l] + s[l + 1] + s[l + 2] + s[l + 3] != '2025':
+    while n > 60 or s[l] + s[l + 1] + s[l + 2] + s[l + 3] != '2025':
         if s[l] + s[l + 1] + s[l + 2] + s[l + 3] == '2025':
             n -= 1
         if s[l] == 'Y':
             y -= 1
         l += 1
-    if n == 60 and y == 120 and r - l + 1 < mini: #and (s[r] == '5' or s[r] == 'Y'):
+    if n == 60 and y >= 120 and r - l + 1 < mini and (s[r] == '5' or s[r] == 'Y'):
         mini = r - l + 1
 print(mini)
