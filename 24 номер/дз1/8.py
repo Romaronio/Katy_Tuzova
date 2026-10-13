@@ -3,14 +3,14 @@ pr = 0
 st = 0
 n = 0
 maxi = 0
-for i in range(len(s) - 1):
+for i in range(len(s)):
     if pr == 0 or st == 0:
-        if s[i] + s[i + 1]  == 'PR':
+        if s[i - 1] + s[i]  == 'PR':
             pr += 1
-            n += 1
-        elif s[i] + s[i + 1] == 'ST':
+            n += 2
+        elif s[i - 1] + s[i] == 'ST':
             st += 1
-            n += 1
+            n += 2
         else:
             n += 1
         if n > maxi:

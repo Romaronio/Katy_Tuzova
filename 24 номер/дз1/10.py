@@ -4,21 +4,27 @@ s = s.replace('Y', '*')
 s = s.replace('X', '#')
 s = s.replace('Z', '#')
 s = s.replace('#*', '!')
-n = 0
-maxi = 0
+# n = 0
+# maxi = 0
+# for i in s:
+#     if i == '@':
+#         if n == 0:
+#             n += 1
+#         else:
+#             if n + 1 > maxi:
+#                 maxi = n + 1
+#             n = 0
+#     if i == '!':
+#         n += 1
+#     else:
+#         n = 0
+#     if n > maxi:
+#         maxi = n
+# print(maxi)
+maxi2= 0
+s = s.split('@')
 for i in s:
-    if i == '@':
-        if n == 0:
-            n += 1
-        else:
-            if n + 1 > maxi:
-                maxi = n + 1
-            n = 0
-    if i == '!':
-        n += 1
-    else:
-        n = 0
-    if n > maxi:
-        maxi = n
-print(maxi)
+    if set(i) == {'!'} and len(i) > maxi2:
+        maxi2 = len(i)
+print(maxi2 + 2)
 #очень не внимательно, опять не учла конец или начало, подумай еще раз
